@@ -13,7 +13,7 @@
     </div>
     
     <div class="split right">
-        <form method="POST" style="border:1px solid #ccc">
+        <form name = "myForm" method="POST" style="border:1px solid #ccc" action="login-validate.php" onsubmit = "return validation()">
             <div class="container">
               <h1 class="tree">LogIn</h1>
               <p id="note">Please fill in this form to create an account.</p>
@@ -31,11 +31,35 @@
           
               <div class="clearfix">
                 <button type="button" class="cancelbtn">Cancel</button>
-                <button type="submit" class="supbtn">LogIn</button>
+                <button type="submit" class="supbtn">Log In</button>
               </div>
-              <p>Don't have account? <a href="signin.html">SignIn</a></p> 
+              <p>Don't have account? <a href="signin.html">Sign In</a></p> 
             </div>
           </form>
+<script>
+    function validation()
+    {
+      var un=document.myFrom.email.value;
+      var ps=document.myFrom.psw.value;
+      if(un.length=="" && ps.length==""){
+        alert("User Name and Password fields are empty.");
+        document.myForm.username.focus();
+        return false;
+      }
+      else{
+        if(un.lenght==""){
+          alert("User Name is empty.");
+          document.myForm.username.focus();
+          return false;
+        }
+        if(ps.length==""){
+          alert("Password field is empty.");
+          document.myForm.psw.focus();
+          return false;
+          }
+      }
+      }
+</script>
        
 </body>
 </html>
