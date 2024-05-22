@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="split left">
-        <img src="logo.jpg" align="center" width="300px"alt="BRAND LOGO">
+        <img src="assets/logo.png" align="center" width="300px"alt="BRAND LOGO">
           <p> Elevate Your Wardrobe, Illuminate Your Style </p>
     </div>
     

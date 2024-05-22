@@ -23,7 +23,7 @@
   </nav>
   <div class="register-form-container">
     <div class="scontainer">
-      <h2>Register</h2>
+      <h2>Register here</h2>
       <form id="register-form">
         <input type="text" placeholder="Username" required>
         <input type="email" placeholder="Email" required>
