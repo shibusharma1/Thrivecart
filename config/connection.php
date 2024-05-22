@@ -20,7 +20,7 @@ $sql="CREATE TABLE cregister(
     fname VARCHAR(30) NOT NULL,
     lname VARCHAR(30) NOT NULL,
     email VARCHAR(30) NOT NULL,
-    COUNTRY VARCHAR(30) NOT NULL,
+    country VARCHAR(30) NOT NULL,
     phone BIGINT(10) NOT NULL
     )";
 

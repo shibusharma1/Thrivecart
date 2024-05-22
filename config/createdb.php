@@ -21,16 +21,6 @@
         
         echo "DB not created successfully because of this error ---->".mysqli_error($conn);
     }  
-//creating table for cregister
-$sql="CREATE TABLE cregister(
-     id INT PRIMARY KEY AUTO_INCREMENT,
-     fname VARCHAR(30) NOT NULL,
-     lname VARCHAR(30) NOT NULL,
-     email VARCHAR(30) NOT NULL,
-     COUNTRY VARCHAR(30) NOT NULL,
-     phone BIGINT(10) NOT NULL
-     )
-    ";
 
 ?>
     
