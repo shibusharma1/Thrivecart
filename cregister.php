@@ -204,12 +204,13 @@ $countries = array(
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>SignUp</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+</div>
     <h2>Register</h2>
-    <form action="/register" method="post">
+    <form action="/register" method="post" class="sform">
         <label for="first_name">First Name:</label><br>
         <input type="text" id="first_name" name="fname" required><br>
         <label for="last_name">Last Name:</label><br>

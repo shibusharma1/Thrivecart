@@ -2,8 +2,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 50px;
+    padding: 80px;
 }
 
 .split {
@@ -46,7 +46,7 @@ body {
 
 form {
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 80px;
     width: 70%;
     margin: 0 auto;
 }
@@ -112,4 +112,99 @@ button:hover {
 #note {
     text-align: center;
     font-size: 14px;
+}
+/* sregister */
+
+.sregister{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.scontainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+}
+
+.auth form {
+  margin-right: 20px;
+}
+
+.auth input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.auth button {
+  padding: 8px 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth button:hover {
+  background-color: #777;
+}
+
+.register-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.register-form-container {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+.register-form- .scontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form-container h2 {
+  margin-bottom: 20px;
+}
+
+.register-form-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.register-form-container button {
+  width: 100%;
+  padding: 8px 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-form-container button:hover {
+  background-color: #777;
 }
