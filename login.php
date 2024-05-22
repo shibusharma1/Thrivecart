@@ -33,7 +33,7 @@
                 <button type="button" class="cancelbtn">Cancel</button>
                 <button type="submit" class="supbtn">Log In</button>
               </div>
-              <p>Don't have account? <a href="signin.html">Sign In</a></p> 
+              <p>Don't have account? <a href="cregister.php">Sign In</a></p> 
             </div>
           </form>
 <script>
