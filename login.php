@@ -16,7 +16,7 @@
         <form name = "myForm" method="POST" style="border:1px solid #ccc" action="login-validate.php" onsubmit = "return validation()">
             <div class="container">
               <h1 class="tree">LogIn</h1>
-              <p id="note">Please fill in this form to create an account charu.</p>
+              <p id="note">Please fill in this form to create an account.</p>
               <hr>
           
               <label for="email" class="email"><b>Email</b></label>
