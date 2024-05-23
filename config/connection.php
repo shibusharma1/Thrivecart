@@ -9,13 +9,15 @@ $dbname = "thrivecart";
 //create a connection
 $conn = mysqli_connect($servername,$username,$password,$dbname);
 
+
 //Check Connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
+
 //creating table for cregister
-$sql="CREATE TABLE cregister(
+$sql="CREATE TABLE IF NOT EXISTS cregister(
     id INT PRIMARY KEY AUTO_INCREMENT,
     fname VARCHAR(30) NOT NULL,
     lname VARCHAR(30) NOT NULL,

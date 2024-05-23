@@ -7,7 +7,8 @@
 </head>
 <body>
     <?php
-    header("location: login.php");
+    //header("location: index.php");
     ?>
+    <h1>Please remove the config word from the URL.</h1>
 </body>
 </html>

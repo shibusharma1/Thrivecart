@@ -9,7 +9,7 @@
 
 
      #Create a database 
-    $sql = "CREATE DATABASE thrivecart";
+    $sql = "CREATE DATABASE IF NOT EXISTS thrivecart";
     $res = mysqli_query($conn , $sql);
     echo "<br>";
     //Check for the database creation success
