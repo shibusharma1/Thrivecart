@@ -255,6 +255,11 @@ $countries = array(
      <br>
         <label for="phone_number">Phone Number:</label><br>
         <input type="tel" id="phone" name="phone_number"  required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="cpassword" name="password"  required><br>
+        <label for="password">Confirm Password:</label><br>
+        <input type="password" id="ccpassword" name="confirmpassword"  required><br>
+        
         <input type="submit" value="Register">
     </form>
 </body>
