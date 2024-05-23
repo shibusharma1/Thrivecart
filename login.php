@@ -13,30 +13,36 @@ error_reporting(E_ALL);
     
     $email = stripcslashes($_POST['email']);
     $password = stripcslashes($_POST['psw']);
+    if(isset($password)){
+             $_SESSION['uid'] = $row['id'];
+             header("location : index.php");
+
+
+    }}
     // $email = mysqli_real_escape_string($conn,$email);
     // $password = mysqli_real_escape_string($conn,$password);
 
     // $password = md5($password);
-    $sql = "select * from cregister where email = '$email' and password = '$password'";
+//     $sql = "select * from cregister where email = '$email' and password = '$password'";
     
-    $result = mysqli_query($conn,$sql);
+//     $result = mysqli_query($conn,$sql);
     
-    $count = mysqli_num_rows($result);
-    if($count == 1){
-        $row = mysqli_fetch_assoc($result);
-        if($row['email'] == $email && $row['password'] == $password){
-            $_SESSION['uid'] = $row['id'];
-            header("location : index.php");
-        }else{
-            echo "<h1>Login failed due to invalid username or password</h1>";
-        }
+//     $count = mysqli_num_rows($result);
+//     if($count == 1){
+//         $row = mysqli_fetch_assoc($result);
+//         if($row['email'] == $email && $row['password'] == $password){
+//             $_SESSION['uid'] = $row['id'];
+//             header("location : index.php");
+//         }else{
+//             echo "<h1>Login failed due to invalid username or password</h1>";
+//         }
         
-    }
-    else{
-        echo "<h1>Login failed due to invalid username or password</h1>";
-    }
+//     }
+//     else{
+//         echo "<h1>Login failed due to invalid username or password</h1>";
+//     }
 
-}
+// }
 
 ?>
 
