@@ -1,7 +1,7 @@
 <?php
    echo "Welcome to the stage where we are ready to connect with database <br>";
    // connecting to database
-    $servername = "localhost";
+     $servername = "localhost";
      $username = "root";
      $password = "";
 
