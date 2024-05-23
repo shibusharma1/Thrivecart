@@ -1,11 +1,11 @@
 <?php
       $title = "Log in";
       $active = "login";
+      require_once('config/connection.php');
  /*
    //starting the session
     session_start();
 
-    require_once('config/connection.php');
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
     
     #Prevent from mysqli injection
