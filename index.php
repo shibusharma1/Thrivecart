@@ -21,7 +21,7 @@
       
     </nav>
         <div class="hero-content">
-            <img src="assets/Herosection1.png" alt="WELCOME TO THRIVE CART" class="icenter">
+            <img src="assets/Herosection1.png" alt="WELCOME TO THRIVECART" class="icenter">
             <a href="#" class="btn">Shop Now</a>
         </div>
    
