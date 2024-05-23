@@ -100,7 +100,7 @@ error_reporting(E_ALL);
               <p>Don't have account? <a href="cregister.php">Sign In</a></p> 
             </div>
           </form>
-<!--<script>
+<script>
     function validation()
     {
       var un=document.myFrom.email.value;
@@ -124,6 +124,6 @@ error_reporting(E_ALL);
       }
       }
 </script>
-    -->      
+         
 </body>
 </html>
