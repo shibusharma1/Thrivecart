@@ -127,7 +127,7 @@
                 }
 }
 
-     header("Location: /onlinestores/login.php");
+     header("Location: login.php");
        ?> 
   
             
