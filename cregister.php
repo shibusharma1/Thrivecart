@@ -210,7 +210,7 @@ $countries = array(
 <body>
 </div>
     <h2>Register</h2>
-    <form action="/register" method="post" class="sform">
+    <form action="validation/cregister_validation.php" method="post" class="sform">
         <label for="first_name">First Name:</label><br>
         <input type="text" id="first_name" name="fname" required><br>
         <?php
@@ -255,9 +255,21 @@ $countries = array(
      <br>
         <label for="phone_number">Phone Number:</label><br>
         <input type="tel" id="phone" name="phone_number"  required><br>
+        <?php
+        if(isset($errors['country_error'])){
+            echo $errors['country_error'];
+        }
+     ?>
+     <br>
         <label for="password">Password:</label><br>
         <input type="password" id="cpassword" name="password"  required><br>
-        <label for="password">Confirm Password:</label><br>
+        <?php
+        if(isset($errors['password_error'])){
+            echo $errors['password_error'];
+        }
+     ?>
+     <br>
+        <label for="confirmpassword">Confirm Password:</label><br>
         <input type="password" id="ccpassword" name="confirmpassword"  required><br>
         
         <input type="submit" value="Register">
