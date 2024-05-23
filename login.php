@@ -1,9 +1,8 @@
 <?php
-// Enable error reporting
-/*ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-    //starting the session
+      $title = "Log in";
+      $active = "login";
+ /*
+   //starting the session
     session_start();
 
     require_once('config/connection.php');
@@ -18,7 +17,7 @@ error_reporting(E_ALL);
              header("location : index.php");
 
 
-    }}
+    }
     $email = mysqli_real_escape_string($conn,$email);
     $password = mysqli_real_escape_string($conn,$password);
 
@@ -57,20 +56,11 @@ error_reporting(E_ALL);
   echo "Email and password REQUIRED";
  }
 */
-//header("location : index.php");
+//header("location : thrivecart/index.php");
 
 
+include_once 'includes/header.php';
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thrieve | Login</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
     <div class="split left">
         <img src="assets/logo.png" align="center" width="300px" alt="Thrievecart.. Loading" title="Thrievecart">
       
@@ -84,10 +74,10 @@ error_reporting(E_ALL);
               <hr>
           
               <label for="email" class="email"><b>Email</b></label>
-              <input type="text" placeholder="Enter Email" name="email" required>
+              <input type="text" placeholder="Enter Email" name="email" >
           
               <label for="psw" class="time"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
+              <input type="password" placeholder="Enter Password" name="psw" >
          
            
         

@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login and Register</title>
-  <link rel="stylesheet" href="css/main.css">
-</head>
+<?php
+  $title = "Register";
+  $active = "Register";
+  include_once 'includes/header.php';
+  ?>
 <body class="sregister">
   <nav>
     <div class="">
