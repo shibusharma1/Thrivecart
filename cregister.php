@@ -210,13 +210,31 @@ $countries = array(
 <body>
 </div>
     <h2>Register</h2>
-    <form action="/register" method="post" class="sform">
+    <form action="validation/cregister.php" method="post" class="sform">
         <label for="first_name">First Name:</label><br>
         <input type="text" id="first_name" name="fname" required><br>
+        <?php
+        if(isset($errors['fname_error'])){
+            echo $errors['fname_error'];
+        }
+     ?>
+     <br>
         <label for="last_name">Last Name:</label><br>
         <input type="text" id="last_name" name="lname" required><br>
+        <?php
+        if(isset($errors['lname_error'])){
+            echo $errors['lname_error'];
+        }
+     ?>
+     <br>
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required><br>
+        <?php
+        if(isset($errors['email_error'])){
+            echo $errors['email_error'];
+        }
+     ?>
+     <br>
         <label for="country">Country:</label><br>
         <select id="country" name="country" required>
             <option value="" disabled selected>Select your country</option>
@@ -229,8 +247,20 @@ $countries = array(
 
             <!-- Add more options as needed -->
         </select><br>
+        <?php
+        if(isset($errors['country_error'])){
+            echo $errors['country_error'];
+        }
+     ?>
+     <br>
         <label for="phone_number">Phone Number:</label><br>
         <input type="tel" id="phone" name="phone_number"  required><br>
+        <?php
+        if(isset($errors['phone_error'])){
+            echo $errors['phone_error'];
+        }
+     ?>
+     <br>
         <input type="submit" value="Register">
     </form>
 </body>
