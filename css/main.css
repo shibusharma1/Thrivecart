@@ -208,3 +208,96 @@ nav {
 .register-form-container button:hover {
   background-color: #777;
 }
+
+
+/* styling css for index.php */
+
+.ibody{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling the navigation bar */
+.inav {
+  background-color: #af370e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Styling the logo */
+.ilogo img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
+
+/* Styling the search bar */
+.search-bar {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar .isearchbutton {
+
+  padding: 8px 15px;
+  background-color: #eb9158;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.isearchbutton{
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+/* Styling the cart */
+.cart img {
+  width: 80px;
+  height: auto;
+}
+
+/* styling the hero section */
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.icenter {
+  display: block;
+  margin-left: 10px;
+  margin-right: 200px;
+  width: 800px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #de6844;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-left:350px;
+}
+
+.btn:hover {
+  background-color: #b91c07;
+}
+
+
+
+
