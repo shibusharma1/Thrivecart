@@ -57,7 +57,7 @@ error_reporting(E_ALL);
   echo "Email and password REQUIRED";
  }
 */
-header("location : index.php");
+//header("location : index.php");
 
 
 ?>
