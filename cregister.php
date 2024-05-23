@@ -210,7 +210,7 @@ $countries = array(
 <body>
 </div>
     <h2>Register</h2>
-    <form action="/register" method="post" class="sform">
+    <form action="/register" method="post">
         <label for="first_name">First Name:</label><br>
         <input type="text" id="first_name" name="fname" required><br>
         <label for="last_name">Last Name:</label><br>
@@ -231,6 +231,9 @@ $countries = array(
         </select><br>
         <label for="phone_number">Phone Number:</label><br>
         <input type="tel" id="phone" name="phone_number"  required><br>
+        <input type="password" id="cpassword" name="passsword" required><br>
+        <!-- confirm password -->
+        <input type="password" id="ccpassword" name="ccpasssword" required><br> 
         <input type="submit" value="Register">
     </form>
 </body>
