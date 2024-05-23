@@ -1,9 +1,10 @@
 <?php
-session_start();
-if(!isset($_SESSION['uid'])){
-    header("Location:login.php");
+// session_start();
 
-}
+// if(!isset($_SESSION['uid'])){
+//     header("Location:login.php");
+
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +15,8 @@ if(!isset($_SESSION['uid'])){
 </head>
 <body>
         <h1>Welcome to Dashboard,
-        <?php echo "User";
+        <?php 
+        echo "User";
         ?>
     </h1>
 </body>

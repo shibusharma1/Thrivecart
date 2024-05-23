@@ -1,6 +1,6 @@
 <?php
 // Enable error reporting
-ini_set('display_errors', 1);
+/*ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
     //starting the session
@@ -19,30 +19,46 @@ error_reporting(E_ALL);
 
 
     }}
-    // $email = mysqli_real_escape_string($conn,$email);
-    // $password = mysqli_real_escape_string($conn,$password);
+    $email = mysqli_real_escape_string($conn,$email);
+    $password = mysqli_real_escape_string($conn,$password);
 
-    // $password = md5($password);
-//     $sql = "select * from cregister where email = '$email' and password = '$password'";
+    $password = md5($password);
+    $sql = "select * from cregister where email = '$email' and password = '$password'";
     
-//     $result = mysqli_query($conn,$sql);
+    $result = mysqli_query($conn,$sql);
     
-//     $count = mysqli_num_rows($result);
-//     if($count == 1){
-//         $row = mysqli_fetch_assoc($result);
-//         if($row['email'] == $email && $row['password'] == $password){
-//             $_SESSION['uid'] = $row['id'];
-//             header("location : index.php");
-//         }else{
-//             echo "<h1>Login failed due to invalid username or password</h1>";
-//         }
+    $count = mysqli_num_rows($result);
+    if($count == 1){
+        $row = mysqli_fetch_assoc($result);
+        if($row['email'] == $email && $row['password'] == $password){
+            $_SESSION['uid'] = $row['id'];
+            header("location : index.php");
+        }else{
+            echo "<h1>Login failed due to invalid username or password</h1>";
+        }
         
-//     }
-//     else{
-//         echo "<h1>Login failed due to invalid username or password</h1>";
-//     }
+    }
+    else{
+        echo "<h1>Login failed due to invalid username or password</h1>";
+    }
 
-// }
+}
+
+//Testing for login
+ #Prevent from mysqli injection
+    
+ $email = $_POST['email'];
+ $password = $_POST['psw'];
+ if(isset($password) && isset($email)){
+  $_SESSION['uid'] = 1;
+  header("location : index.php");
+
+ }else{
+  echo "Email and password REQUIRED";
+ }
+*/
+header("location : index.php");
+
 
 ?>
 
@@ -84,7 +100,7 @@ error_reporting(E_ALL);
               <p>Don't have account? <a href="cregister.php">Sign In</a></p> 
             </div>
           </form>
-<script>
+<!--<script>
     function validation()
     {
       var un=document.myFrom.email.value;
@@ -108,6 +124,6 @@ error_reporting(E_ALL);
       }
       }
 </script>
-       
+    -->      
 </body>
 </html>
