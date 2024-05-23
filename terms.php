@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corporis iste minus unde. Harum, aliquid repudiandae molestias debitis amet modi excepturi commodi cum laborum? Aut saepe quos dolores eos, quae culpa dolor.
+    <h1>Terms and conditions</h1>
 </body>
 </html>
