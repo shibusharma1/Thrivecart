@@ -203,8 +203,8 @@ $countries = array(
 
 
 
-    require_once('/config/connection.php');
-    require_once('/config/retrieve.php');
+    require_once('config/connection.php');
+
 
     $errors = Array();
 
