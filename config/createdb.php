@@ -1,5 +1,5 @@
 <?php
-   echo "Welcome to the stage where we are ready to connect with database <br>";
+   //echo "Welcome to the stage where we are ready to connect with database <br>";
    // connecting to database
      $servername = "localhost";
      $username = "root";
@@ -15,7 +15,7 @@
     //Check for the database creation success
     if($res){
         
-        echo "DB created successfully!!!";
+        //echo "DB created successfully!!!";
     }
     else{
         

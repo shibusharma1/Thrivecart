@@ -1,6 +1,7 @@
 
 <?php
 session_start();
+//$_SESSION['uid'] = 1;
 
 if(isset($_SESSION['uid'])){
     // header("Location:login.php");
@@ -39,6 +40,8 @@ if(isset($_SESSION['uid'])){
             <img src="assets/Herosection1.png" alt="WELCOME TO THRIVECART" class="icenter">
             <a href="login.php" class="btn">Shop Now</a>
         </div>
-   
+   <?php
+   include_once 'config/select.php'
+   ?>
 </body>
 </html>

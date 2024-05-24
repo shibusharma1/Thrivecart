@@ -20,11 +20,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
   $result = mysqli_query($conn,$sql);
   
   $count = mysqli_num_rows($result);
+    echo $password;
+    echo $email;
 
   if($count == 1){
       $row = mysqli_fetch_assoc($result);
       if($row['email'] == $email && $row['password'] == $password){
-          $_SESSION['uname'] = $row['name'];
+          $_SESSION['uid'] = $row['id'];
           header("Location: index.php");
       }else{
           echo "<h1>Login failed due to invalid username or password</h1>";
