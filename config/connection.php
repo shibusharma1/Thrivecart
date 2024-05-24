@@ -28,8 +28,8 @@ $sql="CREATE TABLE IF NOT EXISTS cregister(
     )";
 
     if(mysqli_query($conn,$sql)){
-        echo "<br>";
-        echo "Table Created Successfully.";
+       // echo "<br>";
+        //echo "Table Created Successfully.";
     }else{
         echo "<br>";
         echo "Error Creating table".mysqli_error($conn);
