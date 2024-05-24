@@ -1,63 +1,41 @@
 <?php
-      $title = "Log in";
-      $active = "login";
-      require_once('config/connection.php');
- /*
-   //starting the session
-    session_start();
+  //starting the session
+  session_start();
 
-    if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    
-    #Prevent from mysqli injection
-    
-    $email = stripcslashes($_POST['email']);
-    $password = stripcslashes($_POST['psw']);
-    if(isset($password)){
-             $_SESSION['uid'] = $row['id'];
-             header("location : index.php");
+  $title = "Log in";
+  $active = "login";
+  require_once('config/connection.php');
 
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+  
+  #Prevent from mysqli injection
+  
+  $email = stripcslashes($_POST['email']);
+  $password = $_POST['psw'];
+  $email = mysqli_real_escape_string($conn,$email);
 
-    }
-    $email = mysqli_real_escape_string($conn,$email);
-    $password = mysqli_real_escape_string($conn,$password);
+  $password = md5($password);
+  $sql = "select * from cregister where email = '$email' and password = '$password'";
+  
+  $result = mysqli_query($conn,$sql);
+  
+  $count = mysqli_num_rows($result);
 
-    $password = md5($password);
-    $sql = "select * from cregister where email = '$email' and password = '$password'";
-    
-    $result = mysqli_query($conn,$sql);
-    
-    $count = mysqli_num_rows($result);
-    if($count == 1){
-        $row = mysqli_fetch_assoc($result);
-        if($row['email'] == $email && $row['password'] == $password){
-            $_SESSION['uid'] = $row['id'];
-            header("location : index.php");
-        }else{
-            echo "<h1>Login failed due to invalid username or password</h1>";
-        }
-        
-    }
-    else{
-        echo "<h1>Login failed due to invalid username or password</h1>";
-    }
+  if($count == 1){
+      $row = mysqli_fetch_assoc($result);
+      if($row['email'] == $email && $row['password'] == $password){
+          $_SESSION['uname'] = $row['name'];
+          header("Location: index.php");
+      }else{
+          echo "<h1>Login failed due to invalid username or password</h1>";
+      }
+      
+  }
+  else{
+      echo "<h1>User Doesnot Exist </h1>";
+  }
 
 }
-
-//Testing for login
- #Prevent from mysqli injection
-    
- $email = $_POST['email'];
- $password = $_POST['psw'];
- if(isset($password) && isset($email)){
-  $_SESSION['uid'] = 1;
-  header("location : index.php");
-
- }else{
-  echo "Email and password REQUIRED";
- }
-*/
-//header("location : thrivecart/index.php");
-
 
 include_once 'includes/header.php';
 ?>

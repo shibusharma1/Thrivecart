@@ -36,4 +36,4 @@ $sql="CREATE TABLE IF NOT EXISTS cregister(
     }
 
 
-?>
+ ?>

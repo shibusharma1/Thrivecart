@@ -17,7 +17,7 @@ Welcome to <b>ThriveCart</b>. By accessing and using our website, you agree to b
 <strong>2. Definitions</strong>
 <br>
 
-"Website" refers to http://localhost/Thrivecart/#.
+"Website" refers to http://localhost/Thrivecart/.
 "We", "us", and "our" refer to ThriveCart.
 "You" and "your" refer to the customer using our website.
 <br>

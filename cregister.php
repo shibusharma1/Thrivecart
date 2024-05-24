@@ -213,7 +213,9 @@ $countries = array(
     $lname=$_POST['lname'];
     $email=$_POST['email'];
     $country=$_POST['country'];
-    $phone=$_POST['phone'];
+    $phone=$_POST['phone_number'];
+    $password=$_POST['password'];
+    $confirm_password=$_POST['confirmpassword'];
 
     //First Name Validation 
     $fname = trim($fname);
@@ -321,17 +323,20 @@ $countries = array(
                 }           
                 
                 $password = md5($password);
-                $sql = "Insert into user (fname,lname,email,password,country,phone) values ('$fname','$lname','$email','$password','$country','$phone')";
-                
-                if(mysqli_query($con,$sql)){
-                    echo "<br>Successfully Inserted<br>";
+
+               // Inserting into database
+                $sql="INSERT INTO cregister(fname,lname,email,password,country,phone) VALUES ('$fname','$lname','$email','$password','$country','$phone')";
+
+                if(mysqli_query($conn,$sql)){
+                    echo "Data Inserted Successfully";
+                }else{
+                    echo "Error adding the details: ".$sql."<br>".mysqli_error($conn);
                 }
-                else{
-                    echo "<br>Error in Code<br>";
-                }
+                header("Location: login.php");
+
 }
 
-     header("Location: login.php");
+
 
 ?>
 
@@ -365,7 +370,7 @@ $countries = array(
      <br>
         <label for="country">Country:</label><br>
         <select id="country" name="country" required>
-            <option value="" disabled selected>Select your country</option>
+            <option value="Nepal" selected>Nepal</option>
         <?php 
         foreach($countries as $value)
         {

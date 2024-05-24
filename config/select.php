@@ -7,7 +7,7 @@
     $result = mysqli_query($conn,$sql);
 
     #Display data in tabular format
-    echo "<table border =1 cellpadding=2 cellspacing=2>
+    echo "<table border =1 cellpadding=2 cellspacing=0>
             <tr>
             <th>ID</th>
             <th>FName</th>
@@ -17,7 +17,7 @@
             <th>Phone</th>
             </tr>";
 
-    if(mysqli_num_rows($results)>0){
+    if(mysqli_num_rows($result)>0){
         while($row = mysqli_fetch_assoc($result)){
             echo "<tr> 
             <td>".$row['id']."</td>
@@ -29,6 +29,7 @@
             </tr>";
         }
     }else{
+        echo "<br>";
         echo "Details of Customer not found!!!";
     }
 ?>

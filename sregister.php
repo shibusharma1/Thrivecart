@@ -6,7 +6,7 @@
 <body class="sregister">
   <nav>
     <div class="">
-      <a href="#" class="logo">Your Logo</a>
+      <a href="index.php" class="logo">Your Logo</a>
       <div class="auth">
         < id="login-form">
           <input type="text" placeholder="Username" required>

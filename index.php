@@ -4,7 +4,8 @@ session_start();
 
 if(isset($_SESSION['uid'])){
     // header("Location:login.php");
-    echo "User not login";
+    echo "User login";
+    echo "<a href='logout.php'>Logout</a>";
 }
 ?>
 <!DOCTYPE html>
@@ -13,9 +14,7 @@ if(isset($_SESSION['uid'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-         <?php
-        echo $title;
-        ?> | ThriveCart
+         Dashboard | ThriveCart
     </title>
     <link rel="stylesheet" href="css/main.css">
 </head>
