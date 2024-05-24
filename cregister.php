@@ -117,20 +117,22 @@
                         $errors['confirm_password_error'] = "confirm password and password should be same<br>";
                     }
                 }    
+            
 
-                
+                if(empty($errors)){
                 $password = md5($password);
-
                // Inserting into database
                 $sql="INSERT INTO cregister(fname,lname,email,password,country,phone) VALUES ('$fname','$lname','$email','$password','$country','$phone')";
 
                 if(mysqli_query($conn,$sql)){
                     echo "Data Inserted Successfully";
+                    header("Location: login.php");
                 }else{
                     echo "Error adding the details: ".$sql."<br>".mysqli_error($conn);
                 }
-             //   header("Location: login.php");
+                
             }
+   }
             print_r($errors);
              $title = "Register";
              $active = "Register";
