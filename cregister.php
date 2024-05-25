@@ -16,40 +16,26 @@
     //First Name Validation 
     $fname = trim($fname);
     if(!strlen($fname) > 0){
-        echo "<br>";
-
         $errors['fname_error'] = "First name is required ";
-        echo "<br>";
-
     }
     $pattern = "/^[a-zA-Z ]+$/";//it includes more than one alphabet with space
 
     if(!preg_match($pattern,$fname)){
-        echo "<br>";
-        echo "<br>";
-        $errors['fname_error'] = "First name can't contain digits and special characters<br>";
-        echo "<bR>";
-
+        $errors['fname_error'] = "First name can't contain digits and special characters";
+    ?>
+    
+    <?php
     }
 
 
         //Last Name Validation 
         $lname = trim($lname);
         if(!strlen($lname) > 0){
-            echo "<br>";
-    
             $errors['lname_error'] = "Last name is required ";
-            echo "<br>";
-    
         }
         $pattern = "/^[a-zA-Z ]+$/";//it includes more than one alphabet with space
         if(!preg_match($pattern,$lname)){
-            echo "<br>";
-            echo "<br>";
-    
-            $errors['lname_error'] = "Last name can't contain digits and special characters<br>";
-            echo "<bR>";
-    
+            $errors['lname_error'] = "Last name can't contain digits and special characters";    
         }
 
 
@@ -62,7 +48,7 @@
         $pattern ="/^[a-z0-9\.-_]+@[a-z]+[\.][a-z]+([\.][a-z]{2})?$/";
         if(!preg_match($pattern,$email))
         {
-            $errors['email_error'] = "Email address is not valid<br>";
+            $errors['email_error'] = "Email address is not valid";
         }
     }
     
@@ -71,36 +57,36 @@
     $phone = trim($phone);
     $phone_pattern = "/^9[87][0-9]{8}$/";
     if(!strlen($phone) > 0){
-        $errors['phone_error'] = "Phone number is required.<br>";
+        $errors['phone_error'] = "Phone number is required.";
         
     }else
     if(!preg_match($phone_pattern,$phone))   {
-        $errors['phone_error'] = "Phone number is not valid.<br>";
+        $errors['phone_error'] = "Phone number is not valid.";
     }
     
     
             // country validation 
             
             if(empty($country)){
-                $errors['country_error']="Please select your country<br>";
+                $errors['country_error']="Please select your country";
                 
             }
                 
                 //password validation
                 $password = trim($password);
                 if(!strlen($password) > 0){
-                    $errors['password_error'] = "password is  required<br>";
+                    $errors['password_error'] = "password is  required";
             
                 }else{
                 if(strlen($password) >= 8){
-                    $errors['password_error'] = "password should be greater than 8 digits<br>";
+                    $errors['password_error'] = "password should be greater than 8 digits";
                     return false;
                    
                 }else{
                     $pattern ="/^[a-zA-Z0-9@\.#]+$/";
                     if(!preg_match($pattern,$password))
                     {
-                        $errors['password_error'] = "password is not valid<br>";
+                        $errors['password_error'] = "password is not valid";
                     }
                 }
             }
@@ -133,7 +119,7 @@
                 
             }
    }
-            print_r($errors);
+            //print_r($errors);
              $title = "Register";
              $active = "Register";
 
@@ -349,7 +335,9 @@
         <input type="text" id="first_name" name="fname" required><br>
         <?php
         if(isset($errors['fname_error'])){
-            echo $errors['fname_error'];
+        ?>
+            <label style="color:red">** <?php echo $errors['fname_error'];?></label>
+        <?php
         }
      ?>
      <br>
@@ -357,7 +345,9 @@
         <input type="text" id="last_name" name="lname" required><br>
         <?php
         if(isset($errors['lname_error'])){
-            echo $errors['lname_error'];
+        ?>
+            <label style="color:red">** <?php echo $errors['lname_error'];?></label>
+        <?php
         }
      ?>
      <br>
@@ -390,8 +380,8 @@
         <label for="phone_number">Phone Number:</label><br>
         <input type="tel" id="phone" name="phone_number"  required><br>
         <?php
-        if(isset($errors['country_error'])){
-            echo $errors['country_error'];
+        if(isset($errors['phone_error'])){
+            echo $errors['phone_error'];
         }
      ?>
      <br>
@@ -410,3 +400,4 @@
     </form>
 </body>
 </html>
+
