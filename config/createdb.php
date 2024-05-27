@@ -22,6 +22,6 @@
         echo "DB not created successfully because of this error ---->".mysqli_error($conn);
     }  
 
-?>
+
     
 

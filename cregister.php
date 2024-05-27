@@ -12,6 +12,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = trim($_POST['password']);
     $confirm_password = trim($_POST['confirmpassword']);
 
+
+
     // First Name Validation
     if (empty($fname)) {
         $errors['fname_error'] = "First name is required.";

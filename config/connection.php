@@ -34,6 +34,4 @@ $sql="CREATE TABLE IF NOT EXISTS cregister(
         echo "<br>";
         echo "Error Creating table".mysqli_error($conn);
     }
-
-
- ?>
+ 
