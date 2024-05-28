@@ -9,6 +9,6 @@
     <?php
     //header("location: index.php");
     ?>
-    <h1>Please remove the config word from the URL.</h1>
+    <h1>Please remove the config word from the URL Kajal.</h1>
 </body>
 </html>
