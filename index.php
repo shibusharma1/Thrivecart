@@ -43,5 +43,32 @@ if(isset($_SESSION['uid'])){
    <?php
    include_once 'config/select.php'
    ?>
+     <div class="container">
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Rs 999</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Rs 299</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 3</h2>
+            <p>Rs 1999</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="product2.jpg" alt="Product 3">
+            <h2>Product 4</h2>
+            <p>Rs 199</p>
+            <button>Add to Cart</button>
+        </div>
+        
+    </div>
 </body>
 </html>
