@@ -340,7 +340,7 @@ nav {
 #tbody > p {
   margin-top: 0px;
   margin-bottom: 5px;
-  text-size-adjust: 5px;
+  /* text-size-adjust: 5px; */
 }
 
 /* Styling the links at the bottom */
