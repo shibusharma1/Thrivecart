@@ -112,5 +112,6 @@ For any questions or concerns regarding these terms and conditions, please conta
 
 <a class="ta" href="login.php">GO TO LOG IN</a>
     
-</body>
-</html>
+<?php
+include("includes/footer.php")
+?>

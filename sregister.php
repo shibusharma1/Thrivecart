@@ -29,5 +29,6 @@
       </form>
     </div>
   </div>
-</body>
-</html>
+  <?php
+include("includes/sellerfooter.php")
+?>

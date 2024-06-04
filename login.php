@@ -95,5 +95,6 @@ include_once 'includes/header.php';
       }
 </script>
          
-</body>
-</html>
+<?php
+include("includes/outfooter.php")
+?>

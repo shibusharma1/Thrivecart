@@ -25,4 +25,6 @@
                 &copy; 1996-2023, Amazon.com, Inc. or its affiliates
             </div>
         </div>
-    </footer>    
+    </footer>  
+</body>
+</html>

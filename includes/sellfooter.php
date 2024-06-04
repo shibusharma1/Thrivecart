@@ -26,4 +26,6 @@
         <p>&copy; 2024 Your Online Store. All rights reserved.</p>
     </div>
 </footer>
+</body>
+</html>
 
