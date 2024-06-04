@@ -18,6 +18,13 @@ if(isset($_SESSION['uid'])){
          Dashboard | ThriveCart
     </title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        img{
+            width:"375px";
+            height:"500p0x";
+        }
+
+    </style>
 </head>
 
 
@@ -45,25 +52,25 @@ if(isset($_SESSION['uid'])){
    ?>
      <div class="container">
         <div class="product">
-            <img src="product1.jpeg" alt="Product 1">
+            <img src="assets/product1.jpeg" alt="Product 1">
             <h2>Product 1</h2>
             <p>Rs 999</p>
             <button>Add to Cart</button>
         </div>
         <div class="product">
-            <img src="product2.webp" alt="Product 2">
+            <img src="assets/product2.webp" alt="Product 2">
             <h2>Product 2</h2>
             <p>Rs 299</p>
             <button>Add to Cart</button>
         </div>
         <div class="product">
-            <img src="product3.jpg" alt="Product 2">
+            <img src="assets/product3.jpg" alt="Product 2">
             <h2>Product 3</h2>
             <p>Rs 1999</p>
             <button>Add to Cart</button>
         </div>
         <div class="product">
-            <img src="product4.jpeg" alt="Product 3">
+            <img src="assets/product4.jpeg" search-baralt="Product 3">
             <h2>Product 4</h2>
             <p>Rs 199</p>
             <button>Add to Cart</button>
