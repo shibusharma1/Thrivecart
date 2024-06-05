@@ -3,18 +3,23 @@
   $active = "Register";
   include_once 'includes/header.php';
   ?>
-<body class="sregister">
+<div class="sregister">
   <nav>
     <div class="">
-      <a href="index.php" class="logo">Your Logo</a>
-      <div class="auth">
-        < id="login-form">
+      <!-- <a href="index.php" class="logo">Your Logo</a> -->
+      <div class="auth" id="login-form">
+        <br>
           <input type="text" placeholder="Username" required>
+          <br>
           <input type="password" placeholder="Password" required>
+          <br>
           <button type="submit">Login</button>
+          <br>
         </form>
+        <br>
         <span>or</span>
         <a href="#" class="register-link">Register</a>
+        <br>
       </div>
     </div>
   </nav>
@@ -30,5 +35,5 @@
     </div>
   </div>
   <?php
-include("includes/sellerfooter.php")
+include_once "includes/sellfooter.php";
 ?>
