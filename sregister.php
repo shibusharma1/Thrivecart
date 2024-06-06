@@ -18,6 +18,7 @@
         </form>
         <br>
         <span>or</span>
+        <br>
         <a href="#" class="register-link">Register</a>
         <br>
       </div>
@@ -26,6 +27,7 @@
   <div class="register-form-container">
     <div class="scontainer">
       <h2>Register here</h2>
+      <br>
       <form id="register-form">
         <input type="text" placeholder="Username" required>
         <input type="email" placeholder="Email" required>
