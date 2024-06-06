@@ -18,8 +18,7 @@
             <img src="assets/logo.png" alt="ThriveCart Logo">
         </div>
         <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button type="submit" class="isearchbutton">Search</button>
+            <input type="text" placeholder="Search..."><button type="submit" class="isearchbutton">Search</button>
         </div>
         <div class="cart">
             <a href="#"><img src="assets/cart.png" alt="Cart"></a>

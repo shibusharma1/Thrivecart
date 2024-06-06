@@ -29,19 +29,19 @@ if(isset($_SESSION['uid'])){
 
 
 <body class="ibody">
-    <nav class="inav">
-        <div class="ilogo">
-            <img src="assets/logo.png" alt="ThriveCart Logo">
-        </div>
-        <div class="nav">
-            <input type="text" placeholder="Search...">
-            <button type="submit" class="isearchbutton">Search</button>
-        </div>
-        <div class="cart">
-            <a href="#"><img src="assets/cart.png" alt="Cart"></a>
-        </div>
-      
-    </nav>
+<inav class="inavbar">
+    <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+    </div>
+    <div class="cart">
+        <a href="#"><img src="assets/cart.png" alt="Cart"></a>
+    </div>
+</inav>
+
 
         <div class="hero-content">
             <img src="assets/Herosection1.png" alt="WELCOME TO THRIVECART" class="icenter">

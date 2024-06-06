@@ -218,54 +218,37 @@ nav {
   box-sizing: border-box;
 }
 
-/* Styling the navigation bar */
-.inav {
-  background-color: #af370e;
-  color: white;
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #333;
+  color: #fff;
   padding: 10px 20px;
 }
 
-/* Styling the logo */
-.ilogo img {
-  width: 100px; /* Adjust the width as needed */
-  height: auto;
+.logo img {
+  width: 100px; /* Adjust as needed */
 }
 
-/* Styling the search bar */
-.search-bar {
-  flex: 1;
-  margin: 0 20px;
-}
-
-.search-bar input[type="text"] {
+.search input[type="text"] {
   padding: 8px;
-  width: 70%;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
+  width: 300px;
 }
 
-.search-bar .isearchbutton {
-
+.search button {
   padding: 8px 15px;
-  background-color: #eb9158;
-  color: white;
+  background-color: #444;
+  color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
 
-.isearchbutton{
-  
-  margin-left: 50px;
-  margin-right: 30px;
-}
-
-/* Styling the cart */
 .cart img {
-  width: 80px;
+  width: 30px;
   height: auto;
 }
 
