@@ -77,6 +77,12 @@ if(isset($_SESSION['uid'])){
             <p>Rs 199</p>
             <button>Add to Cart</button>
         </div>
+        <div class="product">
+            <img src="assets/product4.jpeg" search-baralt="Product 4 ">
+            <h2>Product 4</h2>
+            <p>Rs 99</p>
+            <button>Add to Cart</button>
+        </div>
         
     </div>
 <?php
