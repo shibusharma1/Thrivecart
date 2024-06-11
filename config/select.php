@@ -32,4 +32,3 @@
         echo "<br>";
         echo "Details of Customer not found!!!";
     }
-?>
