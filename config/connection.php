@@ -35,3 +35,19 @@ $sql="CREATE TABLE IF NOT EXISTS cregister(
         echo "Error Creating table".mysqli_error($conn);
     }
  
+    //creating table for cregister
+$sql="CREATE TABLE IF NOT EXISTS sadmin(
+    sid INT PRIMARY KEY default 101,
+    adminemail VARCHAR(30) default 'admin1@gmail.com',
+    adminpassword varchar(10) default 'admin123'
+    )";
+
+    if(mysqli_query($conn,$sql)){
+       // echo "<br>";
+        //echo "Table Created Successfully.";
+    }else{
+        echo "<br>";
+        echo "Error Creating table".mysqli_error($conn);
+    }
+
+    

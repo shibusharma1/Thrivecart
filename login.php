@@ -14,14 +14,28 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
   $password = $_POST['psw'];
   $email = mysqli_real_escape_string($conn,$email);
 
+  $sql = "select * from sadmin where adminemail = '$email' and adminpassword = '$password'";
+  
+  $sresult = mysqli_query($conn,$sql);
+  
+  $scount = mysqli_num_rows($sresult);
+    // echo $password;
+    // echo $email;
+
+  if($scount == 1){
+      $row = mysqli_fetch_assoc($sresult);
+      if($row['adminemail'] == $email && $row['adminpassword'] == $password){
+          $_SESSION['uid'] = $row['id'];
+          header("Location: admindashboard.php");
+      }
+    }
+
   $password = md5($password);
   $sql = "select * from cregister where email = '$email' and password = '$password'";
   
   $result = mysqli_query($conn,$sql);
   
   $count = mysqli_num_rows($result);
-    echo $password;
-    echo $email;
 
   if($count == 1){
       $row = mysqli_fetch_assoc($result);
