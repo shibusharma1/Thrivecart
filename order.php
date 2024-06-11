@@ -31,6 +31,7 @@
                         <th>Total</th>
                         <th>Status</th>
                         <th>Action</th>
+                        <th>Image</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,6 +43,7 @@
                         <td>599</td>
                         <td>Pending</td>
                         <td><button>Update Status</button></td>
+                        <td><img src="assets/product1.jpeg" alt="Product A"></td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -51,6 +53,7 @@
                         <td>1999</td>
                         <td>Shipped</td>
                         <td><button>Update Status</button></td>
+                        <td><img src="assets/product4.jpeg" alt="Product B"></td>
                     </tr>
                     <!-- Add more order rows as needed -->
                 </tbody>
@@ -58,7 +61,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Your Online Store. All rights reserved.</p>
+        <?php include("includes/sellfooter.php"); ?>
     </footer>
 </body>
 </html>

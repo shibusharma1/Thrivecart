@@ -18,13 +18,7 @@ if(isset($_SESSION['uid'])){
          Dashboard | ThriveCart
     </title>
     <link rel="stylesheet" href="css/main.css">
-    <style>
-        img{
-            width:"375px";
-            height:"500p0x";
-        }
-
-    </style>
+    
 </head>
 
 
@@ -86,5 +80,5 @@ if(isset($_SESSION['uid'])){
         
     </div>
 <?php
-include("includes/outfooter.php")
+include("includes/footer.php")
 ?>

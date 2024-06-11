@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Seller Dashboard</h1>
+        <h1>Seller</h1>
         <nav>
             <ul class="pul">
                 <li><a href="seller.php">Home</a></li>

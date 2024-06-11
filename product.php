@@ -42,7 +42,10 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Your Online Store. All rights reserved.</p>
+        <?php
+        include("includes/sellfooter.php") 
+        ?>
+
     </footer>
 </body>
 </html>

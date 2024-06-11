@@ -1,59 +1,43 @@
-<footer>
-        <div class="foot-panel1">
-            Back to Top
-        </div>
-        <div class="foot-panel2">
-            <ul>
-               <p>Get to Know Us</p>
-                <a href="#">Careers</a>
-                <a href="#">Blog</a>
-                <a href="#">About Amazon</a>
-                <a href="#">Investor Relations</a>
-                <a href="#">Amazon Devices</a>
-                <a href="#">Amazon Science</a>
-            </ul>
-            <ul>
-               <p>Make Money with Us</p>
-                <a href="#">Sell products on Amazon</a>
-                <a href="#">Sell on Amazon Business</a>
-                <a href="#">Sell apps on Amazon</a>
-                <a href="#">Become an Affiliate</a>
-                <a href="#">Advertise Your Products</a>
-                <a href="#">Self-Publish with Us</a>
-                <a href="#">Host an Amazon Hub</a>
-                <a href="#">> See More Make Money with Us</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+         <?php
+        echo $title;
+        ?> | ThriveCart
+    </title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
 
-            </ul>
-            <ul>
-               <p>Amazon Payment Products</p>
-                <a href="#">Amazon Business Card</a>
-                <a href="#">Shop with Points</a>
-                <a href="#">Reload Your Balance</a>
-                <a href="#">Amazon Currency Converter</a>
-            </ul>
-            <ul>
-               <p>Let Us Help You</p>
-                <a href="#">Amazon and COVID-19</a>
-                <a href="#">Your Account</a>
-                <a href="#">Your Orders</a>
-                <a href="#">Shipping Rates & Policies</a>
-                <a href="#">Returns & Replacements</a>
-                <a href="#">Manage Your Content and Devices</a>
-                <a href="#">Amazon Assistant</a>
-                <a href="#">Help</a>
-            </ul>
-        </div>
-        <div class="foot-panel3">
-            <div class="logo"></div>
-        </div>
-        <div class="foot-panel4">
-            <div class="pages">
-                <a href="#">Conditions of Use</a>
-                <a href="#">Privacy Notice</a>
-                <a href="#">Your Ads Privacy Choice</a>
+<footer class="footer">
+    <div class="footer-top">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Customer Care</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
             </div>
-            <div class="copyright">
-                &copy; 1996-2023, Amazon.com, Inc. or its affiliates
+            <div class="footer-col">
+                <h3>Sell on ThriveCart</h3>
+                <ul>
+                    <li><a href="#">About ThriveCart</a></li>
+                    <li><a href="terms.php">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Review & Win</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-container">
+            <p>&copy; 2024 ThriveCart. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>

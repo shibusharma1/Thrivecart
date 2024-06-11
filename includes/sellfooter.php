@@ -1,31 +1,30 @@
-<head>
-  
-    <link rel="stylesheet" href="css/sellers.css">
-</head>
-<footer>
+<footer class="sellfooter">
     <div class="footer-container">
-        <div class="footer-section">
-            <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis felis non nisl ultrices, sed accumsan sem lacinia.</p>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
         </div>
-        <div class="footer-section">
-            <h3>Contact Us</h3>
-            <p>Email: ThriveCart@gmail.com.com</p>
-            <p>Phone: 01-447526</p>
+        <div class="footer-col">
+            <h3>Help & Support</h3>
+            <ul>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </div>
-        <div class="footer-section">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+        <div class="footer-col">
+            <h3>Legal</h3>
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
         </div>
     </div>
-    <div class="copyright">
-        <p>&copy; 2024 Your Online Store. All rights reserved.</p>
+    <div class="footer-bottom">
+        <p>&copy; 2024 ThriveCart. All Rights Reserved.</p>
     </div>
 </footer>
-</body>
-</html>
-
