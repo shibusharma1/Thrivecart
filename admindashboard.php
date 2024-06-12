@@ -12,7 +12,7 @@ if(isset($_SESSION['uid'])){
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Admin Dashboard</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,11 +21,50 @@ if(isset($_SESSION['uid'])){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="color:white">
+  <a class="navbar-brand" href="#">Thrivecart</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Manage Customer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Manage Seller</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Manage Complaints</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">More</a>
+          <a class="dropdown-item" href="#">Cart</a>
+          <a class="dropdown-item" href="#">Product</a>
+          <a class="dropdown-item" href="#">Payment</a>
+          <a class="dropdown-item" href="#">Order</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
     <div class="container d-flex justify-content-center">
         <div class="row">
             <div class="col text-center">
                 <h1> !!!Welcome Admin!!!</h1>
-               
+                <?php
+                include_once('config/select.php');
+                ?>               
             </div>
         </div>
     </div>
