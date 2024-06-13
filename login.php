@@ -26,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
       $row = mysqli_fetch_assoc($sresult);
       if($row['adminemail'] == $email && $row['adminpassword'] == $password){
           $_SESSION['uid'] = $row['id'];
-          header("Location: admindashboard.php");
+          header("Location: admin/admindashboard.php");
       }
     }
 

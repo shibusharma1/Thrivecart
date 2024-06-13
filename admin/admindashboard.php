@@ -22,53 +22,57 @@ if(isset($_SESSION['uid'])){
   </head>
   <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="color:white">
-  <a class="navbar-brand" href="#">Thrivecart</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <a class="navbar-brand" href="#" style="color:black">Thrivecart</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="admindashboard.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Manage Customer</a>
+        <a class="nav-link" href="customer_table.php">Manage Customer</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Manage Seller</a>
+        <a class="nav-link" href="seller_table.php">Manage Seller</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Manage Complaints</a>
+        <a class="nav-link" href="complaints_table">Manage Complaints</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
+          More
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">More</a>
-          <a class="dropdown-item" href="#">Cart</a>
-          <a class="dropdown-item" href="#">Product</a>
-          <a class="dropdown-item" href="#">Payment</a>
-          <a class="dropdown-item" href="#">Order</a>
+          <!-- <a class="dropdown-item" href="#">More</a> -->
+          <a class="dropdown-item" href="../cart.php">Cart</a>
+          <a class="dropdown-item" href="../product.php">Product</a>
+          <a class="dropdown-item" href="../payment.php">Payment</a>
+          <a class="dropdown-item" href="../order.php">Order</a>
         </div>
       </li>
-    </ul>
-  </div>
+<div class="container d-flex justify-content-center">
+
+      <li class="nav-item">
+        <a class="nav-link" href="../logout.php">LOGOUT</a>
+      </li>
+</div>
+</ul>
+</div>
 </nav>
 
-
-    <div class="container d-flex justify-content-center">
+<div class="container d-flex justify-content-center">
         <div class="row">
             <div class="col text-center">
                 <h1> !!!Welcome Admin!!!</h1>
                 <?php
-                include_once('config/select.php');
+                include_once('../config/select.php');
                 ?>               
             </div>
         </div>
     </div>
-
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
