@@ -50,4 +50,13 @@ $sql="CREATE TABLE IF NOT EXISTS sadmin(
         echo "Error Creating table".mysqli_error($conn);
     }
 
+    $sql = "INSERT INTO sadmin(sid,adminemail,adminpassword) VALUES ('101','admin1@gmail.com','admin123')";
+    if (mysqli_query($conn, $sql)) {
+        // echo "<br>";
+        //echo "Data inserted Successfully.";
+    } else {
+        echo "<br>";
+        echo "Error Inserting data" . mysqli_error($conn);
+    }
+    
     
